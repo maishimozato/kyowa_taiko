@@ -1,6 +1,3 @@
-# Kyowa Taiko website starter
-
-A responsive, static HTML/CSS/JavaScript website using the Kyowa Taiko logo and a burgundy/white colour palette.
 
 ## Included pages
 
@@ -12,12 +9,6 @@ A responsive, static HTML/CSS/JavaScript website using the Kyowa Taiko logo and 
 - `script.js` — mobile navigation, footer year, and form submission
 - `google-apps-script.gs` — starter Google Apps Script backend for Google Sheets
 - `assets/kyowa-taiko-logo.png` — supplied logo
-
-## Preview locally on your Mac
-
-1. Unzip the folder.
-2. Open the `kyowa-taiko-website` folder in Visual Studio Code.
-3. Open `index.html` in a browser. For a smoother development workflow, install the VS Code Live Server extension and choose **Open with Live Server**.
 
 ## Connect the performance form to Google Sheets
 
