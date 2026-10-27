@@ -1,2 +1,3 @@
 # kyowa_taiko
-kyowa taiko website
+
+https://maishimozato.github.io/kyowa_taiko/
