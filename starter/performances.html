@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request a Kyowa Taiko performance."><title>Book a Performance | Kyowa Taiko</title>
+  <link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Kyowa Taiko home"><img src="assets/kyowa-taiko-logo.png" alt="Kyowa Taiko logo"></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="about.html">Who We Are</a><a class="active" href="performances.html">Book a Performance</a><a href="workshops.html">Workshops & Classes</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Let's make some noise</p><h1>Book a performance</h1>
+      <p>Tell us a little about your event and we'll have the information needed to follow up with you.</p>
+    </section>
+    <section class="section section-light">
+      <form id="performance-form" class="inquiry-form">
+        <div class="form-intro"><h2>Performance inquiry</h2><p>Fields marked * are required.</p></div>
+        <div class="form-grid">
+          <label>Your name *<input name="name" autocomplete="name" required maxlength="120"></label>
+          <label>Organization / event host<input name="organization" autocomplete="organization" maxlength="160"></label>
+          <label>Email address *<input type="email" name="email" autocomplete="email" required maxlength="200"></label>
+          <label>Phone number<input type="tel" name="phone" autocomplete="tel" maxlength="50"></label>
+          <label>Event date<input type="date" name="eventDate"></label>
+          <label>Event location<input name="location" placeholder="City or venue" maxlength="200"></label>
+          <label>Type of event
+            <select name="eventType"><option value="">Select one</option><option>Festival or public event</option><option>School or educational event</option><option>Corporate event</option><option>Private celebration</option><option>Community event</option><option>Other</option></select>
+          </label>
+          <label>Estimated audience size<input type="number" name="audienceSize" min="1" max="1000000"></label>
+          <label class="full-width">Tell us about your event *<textarea name="details" rows="5" required maxlength="5000" placeholder="Event format, preferred performance length, timing, budget (if known), and anything else we should know…"></textarea></label>
+        </div>
+        <label class="honeypot" aria-hidden="true">Leave this field blank<input name="website" tabindex="-1" autocomplete="off"></label>
+        <button class="button" type="submit">Send inquiry</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite">This form needs to be connected to the group's Google Apps Script endpoint before it can accept submissions.</p>
+        <p class="small muted">Please don't include sensitive personal information in your inquiry.</p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><a href="https://www.instagram.com/kyowataiko/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://jccc.on.ca/" target="_blank" rel="noopener noreferrer">Japanese Canadian Cultural Centre ↗</a><p>© <span data-year></span> Kyowa Taiko</p></footer>
+</body>
+</html>
